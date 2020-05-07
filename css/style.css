@@ -1,0 +1,88 @@
+/* Général */
+
+.leftColumn {
+	width:33%;
+	background-color: #FECA07;
+	position: relative;
+}
+
+.rightColumn {
+	width: 56%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+p {
+	font-size: 1vw;
+}
+
+
+/* Header */
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+#imgCenter {
+	text-align: center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+	border-radius: 50%;
+	margin: 10%;
+}
+
+h1 {
+	font-size: 3vw;
+}
+
+h2 {
+	font-size:2vw;
+}
+
+#firstName {
+	color:#FECA07;
+}
+
+#underlineStyle {
+	border-bottom: solid 0.1em #FECA07;
+}
+
+/* aside / main columns */
+
+#organisation {
+	display: flex;
+}
+
+/* left side */
+
+.titlesLeftSide {
+	width:100%;
+	height: auto;
+	background-color: #404040;
+	color: #FECA07;
+	text-align: center;
+	font-size:1.5vw;
+	padding-top: 0.002% /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! a revoir ) */
+}
+
+.leftSideContent {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#hobbiesList {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1vw;
+}
+
+#pushedToTheGround {
+	position : absolute;
+	bottom: 0px;
+	width: 100%;
+}
+

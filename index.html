@@ -2,85 +2,113 @@
 <html>
 <head>
 	<title>CV Alexandre Fayolle</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a8980918a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
 	
-	<img src="img/pdp.png" alt="photo de profil">
+	<div class="leftColumn" id="imgCenter"><img src="img/pdp.png" alt="photo de profil"></div>
 
-	<h1>ALEXANDRE FAYOLLE</h1>
-	<h2>Développeur web junior</h2>
+	<div class="rightColumn">
+		<h1><span id="firstName">ALEXANDRE</span> FAYOLLE</h1>
+		<h2><span id="underlineStyle">Dével</span>oppeur web junior</h2>
+	</div>
+	
 
 </header>
 
-<aside>
+<div id="organisation">
+	
+	<aside class="leftColumn">
 	
 	<section>
 
-		<h3>CONTACT</h3>
+		<div class="titlesLeftSide"><h3>CONTACT</h3></div>
+		
+		<div class="leftSideContent">
 		<p>Adresse<br>Clermont-Ferrand, France</p>
 		<p>Téléphone<br>0604496821</p>
 		<p>Email<br>afayolle43@gmail.com</p>
 		<p>LinkedIn<br><a href="https://www.linkedin.com/in/afayolle43/">afayolle43</a></p>
+		</div>
 
 	</section>
 
 	<section>
 		
-		<h3>À PROPOS DE MOI</h3>
+		<div class="titlesLeftSide"><h3>À PROPOS DE MOI</h3></div>
+
+		<div class="leftSideContent">
 		<p>Je suis étudiant en "web development" avec une prédilection pour les sciences et le high-tech. Je suis passionné par le monde de l'informatique.</p>
+		</div>
 
 	</section>
 
-	<section>
+	<section id="pushedToTheGround">
 
-		<h3>LOISIRS</h3>
-		<!-- icones à ajouter -->
+		<div class="titlesLeftSide"><h3>LOISIRS</h3></div>
+		<div id="hobbiesList">					
+		<span class="fa-stack fa-3x">
+ 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  		<i class="fa fa-gamepad fa-stack-1x"></i>
+		</span>
+		<span class="fa-stack fa-3x">
+ 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  		<i class="fa fa-music fa-stack-1x"></i>
+		</span>
+		<span class="fa-stack fa-3x">
+ 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+  		<i class="fa fa-film fa-stack-1x"></i>
+		</span>
+		</div>
 
 	</section>
 
-</aside>
+	</aside>
 
-<main>
+	<main class="rightColumn">
 	
-	<section>
+		<section>
 		
-		<h3>FORMATION</h3>
-		<ul>
-			<li><div><p>2020</p><p>Clermont-Ferrand</p></div><div><h4>OPENCLASSROOMS</h4><p>Titre développeur web</p><p>Intégration de maquettes graphiques de manière responsive.<br>Réaliser des animations CSS & Javascript.<br>Créer, gérer et afficher le contenu d’une base de données.<br>Améliorer le référencement naturel d'un site web.<br>Se connecter à un service web pour exploiter des données tierces (API).<br>Gérer les comptes utilisateurs.<br>Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.</p></div></li>
-			<li><div><p>2019</p><p>Clermont-Ferrand</p></div><div><h4>HUMAN BOOSTER</h4><p>POEC développeur back-end</p><p>Apprentissage de la POO, associée à l’ensemble des technologies et frameworks utilisés en entreprise.<br>Introduction aux méthodes agiles - SCRUM</p></div></li>
-			<li><div><p>2018</p><p>Brioude</p></div><div><h4>HUMAN BOOSTER</h4><p>Formation référent numérique</p><p>Formation ayant pour thème la digitalisation des entreprises</p></div></li>
-			<li><div><p>2016 - 2018</p><p>Clermont-Ferrand</p></div><div><h4>UCA</h4><p>DUT Mesures Physiques / FAC physique</p><p>Pratique de la physique, des maths et de l'informatique avancés.<br>Niveau premières années.</p></div></li>
-			<li><div><p>2015 - 2016</p><p>Brioude</p></div><div><h4>LYCÉE LAFAYETTE</h4><p>Baccalauréat Sciences de l'ingénieur</p><p>Section Européenne.<br>Membre du Conseil d'administration ainsi que du Conseil de la Vie Lycéenne. Délégué de classe suppléant.<br>Mention assez bien.</p></div></li>
-		</ul>
+			<h3>FORMATION</h3>
+			<ul>
+				<li><div><p>2020</p><p>Clermont-Ferrand</p></div><div><h4>OPENCLASSROOMS</h4><p>Titre développeur web</p><p>Intégration de maquettes graphiques de manière responsive.<br>Réaliser des animations CSS & Javascript.<br>Créer, gérer et afficher le contenu d’une base de données.<br>Améliorer le référencement naturel d'un site web.<br>Se connecter à un service web pour exploiter des données tierces (API).<br>Gérer les comptes utilisateurs.<br>Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.</p></div></li>
+				<li><div><p>2019</p><p>Clermont-Ferrand</p></div><div><h4>HUMAN BOOSTER</h4><p>POEC développeur back-end</p><p>Apprentissage de la POO, associée à l’ensemble des technologies et frameworks utilisés en entreprise.<br>Introduction aux méthodes agiles - SCRUM</p></div></li>
+				<li><div><p>2018</p><p>Brioude</p></div><div><h4>HUMAN BOOSTER</h4><p>Formation référent numérique</p><p>Formation ayant pour thème la digitalisation des entreprises</p></div></li>
+				<li><div><p>2016 - 2018</p><p>Clermont-Ferrand</p></div><div><h4>UCA</h4><p>DUT Mesures Physiques / FAC physique</p><p>Pratique de la physique, des maths et de l'informatique avancés.<br>Niveau premières années.</p></div></li>
+				<li><div><p>2015 - 2016</p><p>Brioude</p></div><div><h4>LYCÉE LAFAYETTE</h4><p>Baccalauréat Sciences de l'ingénieur</p><p>Section Européenne.<br>Membre du Conseil d'administration ainsi que du Conseil de la Vie Lycéenne. Délégué de classe suppléant.<br>Mention assez bien.</p></div></li>
+			</ul>
 
-	</section>
+		</section>
 
-	<section>
+		<section>
 
-		<h3>EXPÉRIENCE PROFESSIONELLE</h3>
-		<ul>
-			<li><div><p>Été 2017</p><p>Lempdes-sur-Allagnon</p></div><div><h4>JORIS IDE</h4><p>Programmation et alimentation des machines pour le profilage, manutention des tôles et conditionnement, élaboration de fenêtres.</p></div></li>
-		</ul>
-		
-	</section>
+			<h3>EXPÉRIENCE PROFESSIONELLE</h3>
+			<ul>
+				<li><div><p>Été 2017</p><p>Lempdes-sur-Allagnon</p></div><div><h4>JORIS IDE</h4><p>Programmation et alimentation des machines pour le profilage, manutention des tôles et conditionnement, élaboration de fenêtres.</p></div></li>
+			</ul>
+			
+		</section>
 
-	<section>
-		
-		<h3>RECOMMANDATIONS</h3>
-		<div>
-			<p>MAXIME KIEMAN</p>
-			<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
-		</div>
-		<div>
-			<p>MAXIME KIEMAN</p>
-			<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
-		</div>
+		<section>
+			
+			<h3>RECOMMANDATIONS</h3>
+			<div>
+				<p>MAXIME KIEMAN</p>
+				<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
+			</div>
+			<div>
+				<p>MAXIME KIEMAN</p>
+				<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
+			</div>
 
-	</section>
+		</section>
 
-</main>
+	</main>
+</div>
+
 
 </body>
 </html>		
