@@ -1,5 +1,9 @@
 /* Général */
 
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
 .leftColumn {
 	width:33%;
 	background-color: #FECA07;
@@ -66,7 +70,7 @@ h2 {
 	color: #FECA07;
 	text-align: center;
 	font-size:1.5em;
-	padding-top: 0.002% /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! a revoir ) */
+	padding-top: 0.0001em; /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! a revoir ) */
 }
 
 .leftSideContent {
@@ -81,6 +85,11 @@ h2 {
 	color :#404040;
 }
 
+#pushedToTheGround {
+	position : absolute;
+	bottom: 0px;
+	width: 100%;
+}
 
 
 /* Right side */
@@ -128,6 +137,14 @@ main h4 {
  *******
  ********/
 
+/* fond blanc photo */
+@media (max-width: 980px) {
+
+#imgCenter {
+	background-color: white;
+}
+
+
 @media (max-width: 768px) {
 
 /* header */
@@ -156,22 +173,10 @@ header {
 	width: 100%;
 }
 
-/* fond blanc photo */
-@media (max-width: 980px) {
-
-#imgCenter {
-	background-color: white;
-}
-
-}
- /* loisirs bloqués en bas */
-@media (min-width: 768px) {
-
-
 #pushedToTheGround {
-	position : absolute;
-	bottom: 0px;
-	width: 100%;
+	position : relative;
 }
 
 }
+
+
