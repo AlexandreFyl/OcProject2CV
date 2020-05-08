@@ -13,7 +13,7 @@
 }
 
 p {
-	font-size: 1vw;
+	font-size: 1em;
 }
 
 
@@ -36,11 +36,11 @@ img {
 }
 
 h1 {
-	font-size: 3vw;
+	font-size: 3em;
 }
 
 h2 {
-	font-size:2vw;
+	font-size:2em;
 }
 
 #firstName {
@@ -65,7 +65,7 @@ h2 {
 	background-color: #404040;
 	color: #FECA07;
 	text-align: center;
-	font-size:1.5vw;
+	font-size:1.5em;
 	padding-top: 0.002% /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! a revoir ) */
 }
 
@@ -77,20 +77,16 @@ h2 {
 #hobbiesList {
 	display: flex;
 	justify-content: space-around;
-	font-size: 1vw;
+	font-size: 1em;
 	color :#404040;
 }
 
-#pushedToTheGround {
-	position : absolute;
-	bottom: 0px;
-	width: 100%;
-}
+
 
 /* Right side */
 
 .titlesRightSide {
-	font-size : 1.5vw;
+	font-size : 1.5em;
 	border-bottom: solid 0.1em #FECA07;
 }
 
@@ -118,10 +114,64 @@ h2 {
 }
 
 main h4 {
-	font-size: 1.5vw;
+	font-size: 1.5em;
 }
 
 .intitule {
-	font-size: 1.1vw;
+	font-size: 1.1em;
 	font-weight: bold;
+}
+
+/*******
+********
+ responsive mobile-first 
+ *******
+ ********/
+
+@media (max-width: 768px) {
+
+/* header */
+
+header {
+	flex-direction: column;
+}
+
+
+
+.textCenter {
+	text-align: center;
+}
+
+/* stacking */
+
+#organisation {
+	flex-direction: column-reverse;
+}
+
+.leftColumn {
+	width:100%;
+}
+
+.rightColumn {
+	width: 100%;
+}
+
+/* fond blanc photo */
+@media (max-width: 980px) {
+
+#imgCenter {
+	background-color: white;
+}
+
+}
+ /* loisirs bloqués en bas */
+@media (min-width: 768px) {
+
+
+#pushedToTheGround {
+	position : absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
 }
