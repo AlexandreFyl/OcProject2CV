@@ -4,6 +4,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	margin: 0px;
+}
+
 .leftColumn {
 	width:33%;
 	background-color: #FECA07;
@@ -12,8 +16,8 @@
 
 .rightColumn {
 	width: 56%;
-	margin-left: 5%;
-	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 p {
@@ -74,8 +78,8 @@ h2 {
 }
 
 .leftSideContent {
-	margin-left: 5%;
-	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 #hobbiesList {
@@ -89,14 +93,26 @@ h2 {
 	position : absolute;
 	bottom: 0px;
 	width: 100%;
+	padding-bottom: 2em;
 }
 
 
 /* Right side */
 
+
+.puces {
+	color: #FECA07;
+	margin-right: 1em;
+}
+
 .titlesRightSide {
 	font-size : 1.5em;
 	border-bottom: solid 0.1em #FECA07;
+}
+
+.rightSideBlocList {
+	display: flex;
+	flex-direction: column;
 }
 
 .orange {
@@ -131,6 +147,8 @@ main h4 {
 	font-weight: bold;
 }
 
+
+
 /*******
 ********
  responsive mobile-first 
@@ -143,9 +161,9 @@ main h4 {
 #imgCenter {
 	background-color: white;
 }
+}
 
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 /* header */
 
@@ -171,12 +189,22 @@ header {
 
 .rightColumn {
 	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #pushedToTheGround {
 	position : relative;
 }
 
+/* suppresion decalage liste */
+
+.fa-ul {
+	margin-left:0px!important;
 }
 
+.puces {
+	margin-right: 0.3em;
+}
 
+}
