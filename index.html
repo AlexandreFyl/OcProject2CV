@@ -3,7 +3,8 @@
 <head>
 	<title>CV Alexandre Fayolle</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- règle probleme media queries -->
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta name="description" content="Je suis étudiant en web development avec une prédilection pour les sciences et le high-tech. Je suis passionné par le monde de l'informatique. Venez découvrir mon parcours !"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a8980918a1.js" crossorigin="anonymous"></script>
@@ -28,120 +29,150 @@
 	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<!-- Open Graph -->
+	<meta name="twitter:card" content="summary" />
+	<meta property="og:url"                content="https://alexandrefa.ovh/" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="CV Alexandre Fayolle" />
+	<meta property="og:description"        content="Étudiant en développement web. Venez découvrir mon parcours !" />
+	<meta property="og:image"              content="https://alexandrefa.ovh/img/pdp.png" />
+	<meta property="og:image:width"              content="400" />
+	<meta property="og:image:height"              content="400" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166660534-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-166660534-1');
+	</script>
+
 </head>
 <body>
 
-<header>
-	<div class="leftColumn" id="imgCenter">
-	<picture>
-  		<source srcset="img/pdp.webp" type="image/webp">
- 		<source srcset="img/pdp.png" type="image/png"> 
- 	 	<img src="img/pdp.png" alt="photo de profil">
-	</picture>
-	</div>
-	<!-- <div class="leftColumn" id="imgCenter"><img src="img/pdp.png" alt="photo de profil"></div> -->
+<div id="container">
 
-	<div class="rightColumn textCenter">
-		<h1><span id="firstName">ALEXANDRE</span> FAYOLLE</h1>
-		<h2><span id="underlineStyle">Dével</span>oppeur web junior</h2>
-	</div>
-	
-
-</header>
-
-<div id="organisation">
-	
-	<aside class="leftColumn">
-	
-	<section>
-
-		<div class="titlesLeftSide"><h3>CONTACT</h3></div>
-		
-		<div class="leftSideContent">
-		<p>Adresse<br>Clermont-Ferrand, France</p>
-		<p>Téléphone<br>0604496821</p>
-		<p>Email<br>afayolle43@gmail.com</p>
-		<p>LinkedIn<br><a href="https://www.linkedin.com/in/afayolle43/">afayolle43</a></p>
+	<header>
+		<div class="leftColumn" id="imgCenter">
+		<picture>
+	  		<source srcset="img/pdp.webp" type="image/webp">
+	 		<source srcset="img/pdp.png" type="image/png"> 
+	 	 	<img src="img/pdp.png" alt="photo de profil">
+		</picture>
 		</div>
+		<!-- <div class="leftColumn" id="imgCenter"><img src="img/pdp.png" alt="photo de profil"></div> -->
 
-	</section>
-
-	<section>
-		
-		<div class="titlesLeftSide"><h3>À PROPOS DE MOI</h3></div>
-
-		<div class="leftSideContent">
-		<p>Je suis étudiant en "web development" avec une prédilection pour les sciences et le high-tech. Je suis passionné par le monde de l'informatique.</p>
+		<div class="rightColumn textCenter">
+			<h1><span id="firstName">ALEXANDRE</span> FAYOLLE</h1>
+			<h2><span id="underlineStyle">Dével</span>oppeur web junior</h2>
 		</div>
-
-	</section>
-
-	<section id="pushedToTheGround">
-
-		<div class="titlesLeftSide"><h3>LOISIRS</h3></div>
-		<div id="hobbiesList">					
-		<span class="fa-stack fa-3x">
- 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
-  		<i class="fa fa-gamepad fa-stack-1x"></i>
-		</span>
-		<span class="fa-stack fa-3x">
- 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
-  		<i class="fa fa-music fa-stack-1x"></i>
-		</span>
-		<span class="fa-stack fa-3x">
- 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
-  		<i class="fa fa-film fa-stack-1x"></i>
-		</span>
-		</div>
-
-	</section>
-
-	</aside>
-
-	<main class="rightColumn">
-	
-		<section>
 		
-			<div class="titlesRightSide"><h3><i class="fas fa-graduation-cap orange"></i>FORMATION</h3></div>
-			<ul class="fa-ul"> 
-				<li class="rightSideBloc"><i class="puces far fa-circle"></i><div class="date"><p>2020<br>Clermont-Ferrand</p></div><div class="description"><h4>OPENCLASSROOMS</h4><p class="intitule">Titre développeur web</p><p>Intégration de maquettes graphiques de manière responsive.<br>Réaliser des animations CSS & Javascript.<br>Créer, gérer et afficher le contenu d’une base de données.<br>Améliorer le référencement naturel d'un site web.<br>Se connecter à un service web pour exploiter des données tierces (API).<br>Gérer les comptes utilisateurs.<br>Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.</p></div>
-				<li class="rightSideBloc"><i class="fas fa-circle puces"></i><div class="date"><p>2019<br>Clermont-Ferrand</p></div><div class="description"><h4>HUMAN BOOSTER</h4><p class="intitule">POEC développeur back-end</p><p>Apprentissage de la POO, associée à l’ensemble des technologies et frameworks utilisés en entreprise.<br>Introduction aux méthodes agiles - SCRUM</p></div></li>
-				<li class="rightSideBloc"><i class="fas fa-circle puces"></i><div class="date"><p>2018<br>Brioude</p></div><div class="description"><h4>HUMAN BOOSTER</h4><p class="intitule">Formation référent numérique</p><p>Formation ayant pour thème la digitalisation des entreprises</p></div></li>
-				<li class="rightSideBloc"><i class="fas fa-circle puces"></i><div class="date"><p>2016 - 2018<br>Clermont-Ferrand</p></div><div class="description"><h4>UCA</h4><p class="intitule">DUT Mesures Physiques / FAC physique</p><p>Pratique de la physique, des maths et de l'informatique avancés.<br>Niveau premières années.</p></div></li>
-				<li class="rightSideBloc"><i class="fas fa-circle puces"></i><div class="date"><p>2015 - 2016<br>Brioude</p></div><div class="description"><h4>LYCÉE LAFAYETTE</h4><p class="intitule">Baccalauréat Sciences de l'ingénieur</p><p>Section Européenne.<br>Membre du Conseil d'administration ainsi que du Conseil de la Vie Lycéenne. Délégué de classe suppléant.<br>Mention assez bien.</p></div></li>
-			</ul>
 
-		</section>
+	</header>
 
+	<div id="organisation">
+		
+		<aside class="leftColumn">
+		
 		<section>
 
-			<div class="titlesRightSide"><h3><i class="fas fa-briefcase orange"></i>EXPÉRIENCE PROFESSIONELLE</h3></div>
-			<ul class="fa-ul">
-				<li class="rightSideBloc"><i class="fas fa-circle puces"></i><div class="date"><p>Été 2017<br>Lempdes-sur-Allagnon</p></div><div class="description"><h4>JORIS IDE</h4><p>Programmation et alimentation des machines pour le profilage, manutention des tôles et conditionnement, élaboration de fenêtres.</p></div></li>
-			</ul>
+			<div class="titlesLeftSide"><h3 class="titlesLeftSideNoMargin">CONTACT</h3></div>
 			
-		</section>
-
-		<section>
-			
-			<div class="titlesRightSide"><h3><i class="fas fa-pencil-alt orange"></i>RECOMMANDATIONS</h3></div>
-			<div class="rightSideBloc">
-				<div class="recommandation">
-					<p>MAXIME KIEMAN</p>
-					<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
-				</div>
-				<div class="recommandation">
-					<p>MAXIME KIEMAN</p>
-					<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
-				</div>
+			<div class="leftSideContent">
+			<p>Adresse<br>Clermont-Ferrand, France</p>
+			<p>Téléphone<br>0604496821</p>
+			<p>Email<br>afayolle43@gmail.com</p>
+			<p>LinkedIn<br><a href="https://www.linkedin.com/in/afayolle43/">afayolle43</a></p>
 			</div>
 
+		</section>
+
+		<section>
+			
+			<div class="titlesLeftSide"><h3 class="titlesLeftSideNoMargin">À PROPOS DE MOI</h3></div>
+
+			<div class="leftSideContent">
+			<p>Je suis étudiant en "web development" avec une prédilection pour les sciences et le high-tech. Je suis passionné par le monde de l'informatique.</p>
+			</div>
 
 		</section>
 
-	</main>
-</div>
+		<section id="pushedToTheGround">
 
+			<div class="titlesLeftSide"><h3 class="titlesLeftSideNoMargin">LOISIRS</h3></div>
+			
+
+			<div id="hobbiesList">
+			<i class="icones fa fa-gamepad"></i>
+			<i class="icones fa fa-music"></i>
+			<i class="icones fa fa-film"></i>
+
+			<!-- SAUVEGARDE 					
+			<span class="fa-stack fa-3x">
+	 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  		<i class="fa fa-gamepad fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-3x">
+	 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  		<i class="fa fa-music fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack fa-3x">
+	 	 	<i class="fa fa-circle-thin fa-stack-2x"></i>
+	  		<i class="fa fa-film fa-stack-1x"></i>
+			</span>--> 
+			</div>
+
+		</section>
+
+		</aside>
+
+		<main class="rightColumn">
+		
+			<section>
+			
+				<div class="titlesRightSide"><h3><i class="fas fa-graduation-cap orange"></i>FORMATION</h3></div>
+				<ul class="fa-ul"> 
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces firstPuce"></i></div><div class="date"><p>2020<br>Clermont-Ferrand</p></div><div class="description"><h4>OPENCLASSROOMS</h4><p class="intitule">Titre développeur web</p><p>Intégration de maquettes graphiques de manière responsive.<br>Réaliser des animations CSS & Javascript.<br>Créer, gérer et afficher le contenu d’une base de données.<br>Améliorer le référencement naturel d'un site web.<br>Se connecter à un service web pour exploiter des données tierces (API).<br>Gérer les comptes utilisateurs.<br>Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.</p></div>
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces"></i></div><div class="date"><p>2019<br>Clermont-Ferrand</p></div><div class="description"><h4>HUMAN BOOSTER</h4><p class="intitule">POEC développeur back-end</p><p>Apprentissage de la POO, associée à l’ensemble des technologies et frameworks utilisés en entreprise.<br>Introduction aux méthodes agiles - SCRUM</p></div></li>
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces"></i></div><div class="date"><p>2018<br>Brioude</p></div><div class="description"><h4>HUMAN BOOSTER</h4><p class="intitule">Formation référent numérique</p><p>Formation ayant pour thème la digitalisation des entreprises</p></div></li>
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces"></i></div><div class="date"><p>2016 - 2018<br>Clermont-Ferrand</p></div><div class="description"><h4>UCA</h4><p class="intitule">DUT Mesures Physiques / FAC physique</p><p>Pratique de la physique, des maths et de l'informatique avancés.<br>Niveau premières années.</p></div></li>
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces"></i></div><div class="date"><p>2015 - 2016<br>Brioude</p></div><div class="description"><h4>LYCÉE LAFAYETTE</h4><p class="intitule">Baccalauréat Sciences de l'ingénieur</p><p>Section Européenne.<br>Membre du Conseil d'administration ainsi que du Conseil de la Vie Lycéenne. Délégué de classe suppléant.<br>Mention assez bien.</p></div></li>
+				</ul>
+
+			</section>
+
+			<section>
+
+				<div class="titlesRightSide"><h3><i class="fas fa-briefcase orange"></i>EXPÉRIENCE PROFESSIONELLE</h3></div>
+				<ul class="fa-ul">
+					<li class="rightSideBloc"><div class="align"><i class="fas fa-circle puces"></i></div><div class="date"><p>Été 2017<br>Lempdes-sur-Allagnon</p></div><div class="description"><h4>JORIS IDE</h4><p>Programmation et alimentation des machines pour le profilage, manutention des tôles et conditionnement, élaboration de fenêtres.</p></div></li>
+				</ul>
+				
+			</section>
+
+			<section>
+				
+				<div class="titlesRightSide"><h3><i class="fas fa-pencil-alt orange"></i>RECOMMANDATIONS</h3></div>
+				<div class="rightSideBloc">
+					<div class="recommandation">
+						<p>MAXIME KIEMAN</p>
+						<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
+					</div>
+					<div class="recommandation">
+						<p>MAXIME KIEMAN</p>
+						<p>Directeur, Mon agence<br>Téléphone :<br>Email : name@email.com</p>
+					</div>
+				</div>
+
+
+			</section>
+
+		</main>
+	</div>
+
+</div> <!-- fin container -->
 
 </body>
 </html>		

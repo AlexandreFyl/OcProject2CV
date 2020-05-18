@@ -4,6 +4,11 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+#container {
+	width: 70%;
+	margin : auto;
+}
+
 body {
 	margin: 0px;
 }
@@ -33,6 +38,7 @@ header {
 }
 
 #imgCenter {
+	padding-top: 2em;
 	text-align: center;
 }
 
@@ -41,6 +47,7 @@ img {
 	height: auto;
 	border-radius: 50%;
 	margin: 10%;
+	border : solid 0.3em #A9A9A980;
 }
 
 h1 {
@@ -67,6 +74,11 @@ h2 {
 
 /* left side */
 
+.titlesLeftSideNoMargin {
+	margin-top: 0px;
+	margin-bottom: 0px; 
+}
+
 .titlesLeftSide {
 	width:100%;
 	height: auto;
@@ -74,7 +86,8 @@ h2 {
 	color: #FECA07;
 	text-align: center;
 	font-size:1.5em;
-	padding-top: 0.0001em; /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! a revoir ) */
+	padding-top: 0.3em; /* inneficace en dessous de ce chiffre la et bcp trop grand au dessus ( !!! fixé margin top / bottom h3 ) */
+	padding-bottom: 0.3em;
 }
 
 .leftSideContent {
@@ -87,18 +100,37 @@ h2 {
 	justify-content: space-around;
 	font-size: 1em;
 	color :#404040;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.icones {
+	font-size: 3em;
+	border : solid 0.05em #404040;
+	border-radius: 50%;
+	padding:0.2em;
+	max-width:33%;
 }
 
 #pushedToTheGround {
 	position : absolute;
 	bottom: 0px;
 	width: 100%;
-	padding-bottom: 2em;
+
 }
 
 
 /* Right side */
 
+ul {
+	margin-left: 0px!important;
+}
+
+.firstPuce {
+	border: solid 0.1em #FECA07;
+	border-radius: 50%;
+	padding: 0.2em;
+}
 
 .puces {
 	color: #FECA07;
@@ -161,6 +193,10 @@ main h4 {
 #imgCenter {
 	background-color: white;
 }
+
+#container {
+	width: 100%;
+}
 }
 
 @media (max-width: 600px) {
@@ -188,15 +224,32 @@ header {
 }
 
 .rightColumn {
-	width: 100%;
+	width: 90%;
 	padding-left: 0px;
 	padding-right: 0px;
+	margin: auto;
 }
 
 #pushedToTheGround {
 	position : relative;
 }
 
+
+/* réorganiser liste a puces en mobile */
+.rightSideBloc {
+	flex-direction: column;
+	margin-bottom: 3em;
+}
+
+.date {
+	margin: auto;
+	width:50%;
+	text-align: center;
+}
+
+.align {
+	margin:auto;
+}
 /* suppresion decalage liste */
 
 .fa-ul {
@@ -205,6 +258,10 @@ header {
 
 .puces {
 	margin-right: 0.3em;
+}
+
+#imgCenter {
+	padding-top: 0px;
 }
 
 }
